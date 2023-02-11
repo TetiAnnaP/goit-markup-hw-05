@@ -27,7 +27,9 @@
             ><span class="web">web</span>studio</a
           >
           <ul class="nav-list">
-            <li class="menu"><a class="link" href="./index.html">Studio</a></li>
+            <li class="menu menu-studio">
+              <a class="link link-studio" href="./index.html">Studio </a>
+            </li>
             <li class="menu">
               <a class="link" href="./potrfolio.html">Portfolio</a>
             </li>
@@ -54,7 +56,9 @@
       <section class="hero-section">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="order-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!--MAIN PAGE CONTENT-->
@@ -386,7 +390,9 @@
     <footer class="footer-section">
       <div class="footer-container container">
         <div class="logo-container">
-          <a class="logo-link" href=""> <span class="web">web</span>studio </a>
+          <a class="logo-link" href="./index.html">
+            <span class="web">web</span>studio
+          </a>
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -427,5 +433,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
